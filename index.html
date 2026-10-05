@@ -1,25 +1,89 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head> <style>
-    body {
-        background: pink;
-        text-align: center;
-        font-family: Arial;
-        padding-top: 50px;
-    }
+    <title>Cherrypop</title>
 
-    h1 {
-        color: purple;
-        font-size: 40px;
-    }
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    p {
-        color: #444;
-        font-size: 20px;
-    }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #0d0d0d;
+            color: white;
+            font-family: Arial, sans-serif;
 
-    button {
-        background: purple;
-        color: white;
-        borde
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .small {
+            font-size: 15px;
+            letter-spacing: 4px;
+            color: #999;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            font-size: 52px;
+            margin: 0;
+            letter-spacing: -2px;
+        }
+
+        p {
+            color: #aaa;
+            font-size: 18px;
+            margin: 18px 0 30px;
+        }
+
+        button {
+            background: white;
+            color: #111;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="small">welcome to</div>
+
+        <h1>Cherrypop 🖤</h1>
+
+        <p id="message">my little corner of the internet.</p>
+
+        <button onclick="changeText()">click me</button>
+
+    </div>
+
+    <script>
+        function changeText() {
+            document.getElementById("message").innerText =
+            "okayyy you found the secret message ✨";
+        }
+    </script>
+
+</body>
+</html>
